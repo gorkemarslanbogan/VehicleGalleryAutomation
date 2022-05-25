@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="machineDataSet1" targetNamespace="http://tempuri.org/machineDataSet1.xsd" xmlns:mstns="http://tempuri.org/machineDataSet1.xsd" xmlns="http://tempuri.org/machineDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="machineConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="machineConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.VeritabanıGörsel.Properties.Settings.GlobalReference.Default.machineConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_customer_sellsTableAdapter" GeneratorDataComponentClassName="tbl_customer_sellsTableAdapter" Name="tbl_customer_sells" UserDataComponentName="tbl_customer_sellsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="machineConnectionString (Settings)" DbObjectName="machine.dbo.tbl_islem" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>Select tbl_islem.islemİd,tbl_islem.pName,islemUrunStok,tbl_islem.islemTutar,tbl_islem.userName from tbl_islem inner join product_tbl on tbl_islem.pName=product_tbl.pName</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="islemİd" DataSetColumn="islemİd" />
+              <Mapping SourceColumn="pName" DataSetColumn="pName" />
+              <Mapping SourceColumn="islemUrunStok" DataSetColumn="islemUrunStok" />
+              <Mapping SourceColumn="islemTutar" DataSetColumn="islemTutar" />
+              <Mapping SourceColumn="userName" DataSetColumn="userName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="machineDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="machineDataSet1" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="machineDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_customer_sells" msprop:Generator_RowEvHandlerName="tbl_customer_sellsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_customer_sellsRowDeleted" msprop:Generator_RowDeletingName="tbl_customer_sellsRowDeleting" msprop:Generator_RowEvArgName="tbl_customer_sellsRowChangeEvent" msprop:Generator_TablePropName="tbl_customer_sells" msprop:Generator_RowChangedName="tbl_customer_sellsRowChanged" msprop:Generator_UserTableName="tbl_customer_sells" msprop:Generator_RowChangingName="tbl_customer_sellsRowChanging" msprop:Generator_RowClassName="tbl_customer_sellsRow" msprop:Generator_TableClassName="tbl_customer_sellsDataTable" msprop:Generator_TableVarName="tabletbl_customer_sells">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="islemİd" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="islemİdColumn" msprop:Generator_ColumnPropNameInRow="islemİd" msprop:Generator_UserColumnName="islemİd" msprop:Generator_ColumnVarNameInTable="columnislemİd" type="xs:int" />
+              <xs:element name="pName" msprop:Generator_ColumnPropNameInTable="pNameColumn" msprop:Generator_ColumnPropNameInRow="pName" msprop:Generator_UserColumnName="pName" msprop:Generator_ColumnVarNameInTable="columnpName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="islemUrunStok" msprop:Generator_ColumnPropNameInTable="islemUrunStokColumn" msprop:Generator_ColumnPropNameInRow="islemUrunStok" msprop:Generator_UserColumnName="islemUrunStok" msprop:Generator_ColumnVarNameInTable="columnislemUrunStok" type="xs:int" minOccurs="0" />
+              <xs:element name="islemTutar" msprop:Generator_ColumnPropNameInTable="islemTutarColumn" msprop:Generator_ColumnPropNameInRow="islemTutar" msprop:Generator_UserColumnName="islemTutar" msprop:Generator_ColumnVarNameInTable="columnislemTutar" type="xs:decimal" />
+              <xs:element name="userName" msprop:Generator_ColumnPropNameInTable="userNameColumn" msprop:Generator_ColumnPropNameInRow="userName" msprop:Generator_UserColumnName="userName" msprop:Generator_ColumnVarNameInTable="columnuserName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_customer_sells" />
+      <xs:field xpath="mstns:islemİd" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

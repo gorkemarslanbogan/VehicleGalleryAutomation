@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{483E72D0-FE71-46FB-827A-F2578B076E57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VeritabanıGörsel</RootNamespace>
+    <AssemblyName>VeritabanıGörsel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addProduct.Designer.cs">
+      <DependentUpon>addProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCustomer.Designer.cs">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUsers.Designer.cs">
+      <DependentUpon>AddUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buttonsClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="calisanRapor1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>calisanRapor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="calisanRaporDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calisanRaporDetay.Designer.cs">
+      <DependentUpon>calisanRaporDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="database.cs" />
+    <Compile Include="HomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeScreen.Designer.cs">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginScreen.Designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="machineDataSet1.cs">
+      <DependentUpon>machineDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="machineDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machineDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="machineDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machineDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="managmentCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managmentCustomer.Designer.cs">
+      <DependentUpon>managmentCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managmentProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managmentProduct.Designer.cs">
+      <DependentUpon>managmentProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="raporCalisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporCalisan.Designer.cs">
+      <DependentUpon>raporCalisan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sellrapors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sellrapors.Designer.cs">
+      <DependentUpon>Sellrapors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sellProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellProduct.Designer.cs">
+      <DependentUpon>sellProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sellReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sellReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.Designer.cs">
+      <DependentUpon>UpdatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewCustomer.Designer.cs">
+      <DependentUpon>viewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewProduct.Designer.cs">
+      <DependentUpon>viewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewManagment.Designer.cs">
+      <DependentUpon>ViewManagment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addProduct.resx">
+      <DependentUpon>addProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addCustomer.resx">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUsers.resx">
+      <DependentUpon>AddUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calisanRapor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>calisanRapor1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calisanRaporDetay.resx">
+      <DependentUpon>calisanRaporDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreen.resx">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managmentCustomer.resx">
+      <DependentUpon>managmentCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managmentProduct.resx">
+      <DependentUpon>managmentProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="raporCalisan.resx">
+      <DependentUpon>raporCalisan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sellrapors.resx">
+      <DependentUpon>Sellrapors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellProduct.resx">
+      <DependentUpon>sellProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sellReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePassword.resx">
+      <DependentUpon>UpdatePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewCustomer.resx">
+      <DependentUpon>viewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewProduct.resx">
+      <DependentUpon>viewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewManagment.resx">
+      <DependentUpon>ViewManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="machineDataSet1.xsc">
+      <DependentUpon>machineDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="machineDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>machineDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="machineDataSet1.xss">
+      <DependentUpon>machineDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="machineDataSet2.xsc">
+      <DependentUpon>machineDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="machineDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>machineDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="machineDataSet2.xss">
+      <DependentUpon>machineDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARSLANBOGAN-OTOMOTİV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proje-login-page-design.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradyon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
