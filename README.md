@@ -3,4 +3,4 @@ Yıl sonu ödevim olan local veri tabanıyla ilişkili araç galeri otomasyonu .
 
 First Screen             |  Without Error Message 
 :-------------------------:|:-------------------------:
-![İmage]([http://url/to/img.png](https://github.com/gorkemarslanbogan/VehicleGalleryAutomation/blob/main/loginscreen.PNG?raw=true))
+![İmage]([[http://url/to/img.png](https://github.com/gorkemarslanbogan/VehicleGalleryAutomation/blob/main/loginscreen.PNG)](https://github.com/gorkemarslanbogan/VehicleGalleryAutomation/blob/main/loginscreen.PNG?raw=true))
